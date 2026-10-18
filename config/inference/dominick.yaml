@@ -1,0 +1,27 @@
+dataset_repo: autogluon/chronos_datasets
+dataset_name: dominick
+split: train
+target_col: target
+context_length: 512
+prediction_length: 8
+max_items: null
+device_map: auto
+dtype: auto
+
+once_cfg:
+  temperature: 1.0
+  top_k: 50
+  top_p: 1.0
+  num_samples: 20
+
+multiple_cfg:
+  num_samples: 20
+  temperature: 1.0
+  top_k: 50
+  top_p: 1.0
+  top_token_count: 20
+  sample_u_low: 0.1
+  sample_u_high: 0.9
+  model_prediction_length: 1
+  multi_step_length: 8
+  seed: 455555

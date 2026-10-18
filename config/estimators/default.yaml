@@ -1,0 +1,8 @@
+- name: SGA
+  cfg:
+    aggregation: all-sum
+    weight: prob
+    token_level: neg entropy
+    step_aggregation: average
+    alpha: 0.1
+    beta: 1

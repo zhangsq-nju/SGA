@@ -1,0 +1,8 @@
+merge_policy: same-time
+sim_tool: dtw
+slice_length: 4
+threshold_coefficient: 0.25
+dtw_window: null
+dtw_max_step: null
+scale_normalization: seasonal_error
+scale_eps: 1e-4

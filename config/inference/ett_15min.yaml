@@ -1,0 +1,28 @@
+dataset_repo: autogluon/chronos_datasets_extra
+dataset_name: ETTm
+split: train
+target_col: all
+trust_remote_code: true
+context_length: 512
+prediction_length: 24
+max_items: null
+device_map: auto
+dtype: auto
+
+once_cfg:
+  temperature: 1.0
+  top_k: 50
+  top_p: 1.0
+  num_samples: 20
+
+multiple_cfg:
+  num_samples: 20
+  temperature: 1.0
+  top_k: 50
+  top_p: 1.0
+  top_token_count: 20
+  sample_u_low: 0.1
+  sample_u_high: 0.9
+  model_prediction_length: 1
+  multi_step_length: 8
+  seed: 455555
